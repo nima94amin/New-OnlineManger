@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imgbtn_contact"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            android:background="#f55348"
+            android:layout_weight="10" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:text="شماره"
+            android:ems="10"
+            android:id="@+id/et_number_sms"
+            android:layout_weight="85"
+            android:drawableLeft="@drawable/username"
+            android:textColor="#365ff4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="286dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_body_sms" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dbeefb">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ارسال"
+            android:id="@+id/btn_send_sms"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:textSize="18dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="اضافه متن آماده"
+            android:id="@+id/btn_temp_sms"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@color/material_deep_teal_500"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

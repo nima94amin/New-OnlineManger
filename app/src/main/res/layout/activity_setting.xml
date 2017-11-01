@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:weightSum="1"
+    android:background="@android:color/background_light"
+    style="@style/Base.AlertDialog.AppCompat">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1.17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="اندازه فونت برنامه"
+            android:id="@+id/textView3"
+            android:layout_gravity="right"
+            android:textColor="@color/colorAccent" />
+
+        <com.rey.material.widget.Slider
+            style="@style/Material.Widget.Slider"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            app:sl_minValue="0"
+            app:sl_maxValue="60"
+            app:sl_value="20"
+            android:id="@+id/slider"
+            app:sl_discreteMode="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سایز متن برنامه"
+            android:id="@+id/sample"
+            android:textSize="18dip"
+            android:visibility="visible"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#dbeefb">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت"
+            android:id="@+id/btn_seting_save"
+            android:background="@android:color/holo_green_light"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

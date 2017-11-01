@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.Profile">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/accent_material_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="پروفایل"
+            android:id="@+id/textView5"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/ly_moshakhast"
+        android:visibility="invisible">
+
+        <LinearLayout
+
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true"
+                android:scrollbars = "vertical"
+                android:scrollbarStyle="insideInset"
+                >
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1"
+                    >
+                    <!-- Add here which you want -->
+                    <LinearLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="مشخصات شناسه "
+                            android:id="@+id/textView12"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#0e31fb" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="372dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:id="@+id/tv_username_mskst"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_horizontal"
+                                        android:background="#8ddcf2" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:id="@+id/tv_moblie__mskst"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_horizontal"
+                                        android:background="#dddddd" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#565656">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="نام کاربری"
+                                        android:id="@+id/textView14"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="شماره موبایل"
+                                        android:id="@+id/textView18"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.24" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2" >
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" >
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" >
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:id="@+id/tv_name_mskst"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:gravity="center_horizontal"
+                                            android:background="#8ddcf2" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:id="@+id/tv_family_mskst"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:gravity="center_horizontal"
+                                            android:background="#dddddd" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:id="@+id/tv_code__mskst"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:gravity="center_horizontal"
+                                            android:background="#eeeeee" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:id="@+id/tv_father_mskst"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:gravity="center_horizontal"
+                                            android:background="#dddddd" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:id="@+id/tv_email_mskst"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="5dp"
+                                            android:gravity="center_horizontal"
+                                            android:background="#eeeeee" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="#565656">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="نام "
+                                        android:id="@+id/textView21"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="نام خانوادگی"
+                                        android:id="@+id/textView22"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="کدملی"
+                                        android:id="@+id/textView23"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="نام پدر"
+                                        android:id="@+id/textView24"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:text="ایمیل"
+                                        android:id="@+id/textView29"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="#ffffff" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="نشانی"
+                            android:id="@+id/textView13"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#1a44ea" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="10dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:id="@+id/tv_ostan_mskst"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_horizontal"
+                                    android:background="#8ddcf2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:id="@+id/tv_city_mskst"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_horizontal"
+                                    android:background="#dddddd" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:id="@+id/tv_address_mskst"
+                                    android:layout_weight="2.5"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center_horizontal|fill"
+                                    android:background="#eeeeee"
+                                    android:scrollIndicators="right"
+                                    android:inputType="textLongMessage|textMultiLine" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="#565656">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="استان"
+                                    android:id="@+id/textView34"
+                                    android:layout_weight=".5"
+                                    android:password="false"
+                                    android:layout_marginRight="5dp"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="شهر"
+                                    android:id="@+id/textView35"
+                                    android:layout_weight=".5"
+                                    android:layout_marginRight="5dp"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="آدرس"
+                                    android:id="@+id/textView36"
+                                    android:layout_weight="1"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </TableLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

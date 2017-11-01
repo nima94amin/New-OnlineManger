@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".main.MainActivity">
+    <!-- this is copy and past here from down and out .-->
+    <include layout="@layout/hamberger_menu" />
+    <!-- barye tabhast-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_gravity="bottom"
+
+        android:background="#2885db"
+        android:fillViewport="false"
+        android:animateLayoutChanges="true"
+        android:fadeScrollbars="true"
+        app:tabSelectedTextColor="@color/cardview_light_background"
+
+        app:tabGravity="fill"
+        android:textColor="#ecf0f1"
+        android:paddingRight="@dimen/cardview_default_radius"
+
+
+        android:touchscreenBlocksFocus="true"
+        android:transitionGroup="false"
+        app:tabContentStart="@dimen/cardview_default_radius"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewpager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_weight="100">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bmb_buttonEnum="textOutsideCircle"
+            app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+            app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
