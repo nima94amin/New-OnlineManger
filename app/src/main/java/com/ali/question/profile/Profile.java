@@ -45,6 +45,7 @@ public class Profile extends Activity {
 
         Bundle extra = getIntent().getExtras();
         Log.i("alladk",extra.getString("username_start_p"));
+        new class_selectInformationUser(extra.getString("username_start_p")).execute();
 
 
     }

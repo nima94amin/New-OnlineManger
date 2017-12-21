@@ -104,7 +104,7 @@
                         android:theme="@style/MyEditText"
                         android:drawableLeft="@drawable/mobile"
                         android:gravity="center"
-                        android:inputType="number|numberPassword|numberSigned|numberDecimal"
+                        android:inputType="number|numberSigned|numberDecimal"
                         android:maxLength="11" />
                     android:theme="@style/MyEditText"
                         android:gravity="center"

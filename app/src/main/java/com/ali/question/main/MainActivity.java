@@ -887,7 +887,6 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(o);
 
         }
-
         @Override
         protected Object doInBackground(Object[] params) {
 
@@ -987,9 +986,10 @@ public class MainActivity extends AppCompatActivity {
             if(th == true){
 
                 ////enter your code ...
-                Toast.makeText(getApplicationContext(), "Error inنتانتااon", Toast.LENGTH_SHORT).show();
+
 
                 new class_selectUm(username, mobile).execute();
+                Toast.makeText(getApplicationContext(), "Enter succes", Toast.LENGTH_SHORT).show();
 
 
             }
